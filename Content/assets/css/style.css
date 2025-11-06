@@ -108,7 +108,8 @@ header.header-main .container-fluid .header-left .header-searchbar .form-control
 .app-wrapper .app-content .page-content {
 	flex-grow: 1;
 	padding: 5px;
-	margin-top: 70px;
+	margin-top: 80px;
+	padding-bottom: 3rem;
 }
 .vertical-sidebar {
 	position: fixed;
@@ -261,17 +262,17 @@ nav .app-nav .main-nav > li:not(.menu-title) > a i {
 	margin-right: 0.3rem;
 	margin-top: -1px;
 }
-	nav .app-nav .main-nav > li:not(.menu-title) > a::after {
-		content: "\f106";
-		transition: all 0.3s ease;
-		background-image: none;
-		font-family: "Font Awesome 5 Free" !important;
-		font-weight: 900;
-		right: 1.5rem;
-		position: absolute;
-		font-size: 0.7rem;
-		top: 14px;
-	}
+nav .app-nav .main-nav > li:not(.menu-title) > a::after {
+	content: "\f106";
+	transition: all 0.3s ease;
+	background-image: none;
+	font-family: "Font Awesome 5 Free" !important;
+	font-weight: 900;
+	right: 1.5rem;
+	position: absolute;
+	font-size: 0.7rem;
+	top: 14px;
+}
 nav .app-nav .main-nav > li:not(.menu-title) ul {
 	margin: 0 1rem;
 	list-style-position: inside;
@@ -302,17 +303,17 @@ nav .app-nav .main-nav > li:not(.menu-title) ul li.active a::before {
 nav .app-nav .main-nav > li:not(.menu-title) ul li:last-child a::after {
 	border-left: 0;
 }
-	nav .app-nav .main-nav > li:not(.menu-title) ul li a::before {
-		content: "";
-		width: 4px;
-		height: 28px;
-		position: absolute;
-		top: 6px;
-		left: 6px;
-		font-size: 20px;
-		background-color: transparent;
-		border-radius: 0.6rem;
-	}
+nav .app-nav .main-nav > li:not(.menu-title) ul li a::before {
+	content: "";
+	width: 4px;
+	height: 28px;
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	font-size: 20px;
+	background-color: transparent;
+	border-radius: 0.6rem;
+}
 nav .app-nav .main-nav > li:not(.menu-title) ul li.another-level:last-child {
 	padding-bottom: 0;
 }
@@ -366,9 +367,186 @@ nav .app-nav .menu-item {
 }
 
 /* SIDEBAR CODE END */
-
+.main-title {
+	font-weight: 600;
+	text-transform: capitalize;
+	font-size: 1.7rem;
+	margin-bottom: 0;
+}
+.app-line-breadcrumbs li {
+	display: inline-block;
+}
+.app-line-breadcrumbs li + li::before {
+	content: "/";
+	color: #a0a0b0;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+.app-line-breadcrumbs li + li.active a {
+	color: #0f626a;
+}
+.app-line-breadcrumbs li + li:hover a {
+	text-decoration: underline;
+}
+.f-s-14 {
+	font-size: 14px !important;
+}
+.badge {
+	padding: 0.3em 0.9em 0.3em;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	line-height: 1.4;
+}
+.bg-warning {
+	background-color: rgba(249, 193, 35, 1) !important;
+	color: #fff;
+}
+.bg-success {
+	background-color: rgba(10, 185, 100, 1) !important;
+	color: #fff;
+}
+.bg-danger {
+	background-color: rgba(225, 78, 90, 1) !important;
+	color: #fff;
+}
+.bg-danger:hover, .bg-danger:active, .bg-danger.active, .bg-danger.show, .bg-danger:checked, .bg-danger:focus {
+	background-color: rgba(225, 78, 90, 0.8);
+}
+.bg-success:hover, .bg-success:active, .bg-success.active, .bg-success.show, .bg-success:checked, .bg-success:focus {
+	background-color: rgba(10, 185, 100, 0.8);
+}
+.f-s-10 {
+	font-size: 10px !important;
+}
+.table-lg > :not(caption) > * > * {
+	padding: 0.7rem 0.7rem !important;
+	font-size: 14px;
+}
+.btn.icon-btn {
+	height: 32px;
+	width: 32px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	z-index: 1;
+	font-size:14px;
+}
+.form-check-input {
+	width: 1rem;
+	height: 1rem;
+	border: 2px solid rgba(98, 98, 98, 0.4);
+}
+.ticket-app .ticket-card {
+	overflow: hidden;
+}
+.bg-primary {
+	background-color: #0f626a !important;
+	color: #fff;
+}
+.ticket-app .ticket-card .circle-bg-img {
+	font-size: 840%;
+	position: absolute;
+	right: -16px;
+	top: -43px;
+	opacity: 0.25;
+	overflow: hidden;
+}
+.btn-white, .bg-white {
+	color: #28232d !important;
+}
+.bg-white {
+	background-color: #fff !important;
+	color: #fff;
+}
+.f-s-25 {
+	font-size: 25px !important;
+}
+.f-s-16 {
+	font-size: 16px !important;
+}
+h3 {
+	font-size: 1.95rem;
+}
+.f-w-600 {
+	font-weight: 600 !important;
+}
+.bg-info {
+	background-color: #4196fa !important;
+	color: #fff;
+}
+.text-info {
+	color: #4196fa !important;
+}
+.text-success {
+	color: #0ab964 !important;
+}
+.text-warning {
+	color: #f9c123 !important;
+}
+.bg-success {
+	background-color: #0ab964 !important;
+	color: #fff;
+}
+.bg-warning {
+	background-color: #f9c123 !important;
+	color: #fff;
+}
+.w-50 {
+	width: 50px !important;
+}
+.h-50 {
+	height: 50px !important;
+}
+.b-r-15 {
+	border-radius: 15px !important;
+}
+.f-s-22 {
+	font-size: 22px !important;
+}
+.bg-light-dark {
+	background-color: rgba(40, 35, 45, 0.1);
+	color: #28232d !important;
+}
+header.header-main .container-fluid .header-right .head-icon {
+	font-size: 24px;
+	line-height: 0;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+}
+.text-light-primary {
+	background-color: rgba(15, 98, 106, 0.1);
+	color: #0f626a;
+	border-color: transparent;
+	transition: all 0.3s ease;
+}
+.text-light-warning {
+	background-color: rgba(249, 193, 35, 0.1);
+	color: #f9c123;
+	border-color: transparent;
+	transition: all 0.3s ease;
+}
+.text-light-danger {
+	background-color: rgba(225, 78, 90, 0.1);
+	color: #e14e5a;
+	border-color: transparent;
+	transition: all 0.3s ease;
+}
+div > footer {
+	position: fixed;
+	bottom: 0;
+	padding: 0.75rem 2.5rem 0.75rem 20rem;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	transition: all 0.3s ease;
+	background-color: rgba(255, 255, 255, 1);
+	border-top: 1px solid rgba(98, 98, 98, 0.05);
+	box-shadow: 0 .1rem 0.5rem 0 rgba(40, 35, 45, .10);
+}
 .card {
-	box-shadow: 0 .1rem 0.5rem 0 rgba(var(--dark), .10);
+	box-shadow: 0 .1rem 0.5rem 0 rgba(40, 35, 45,.10);
 	border: none;
 	margin-bottom: 1.25rem;
 	transition: all 0.3s ease;
@@ -377,6 +555,38 @@ nav .app-nav .menu-item {
 .card .card-body, .card .card-header, .card .card-footer {
 	padding: 1.125rem 1.5rem;
 }
+.card .card-header, .card .card-footer {
+	background-color: transparent;
+	border-color: #ebedf0;
+}
+.card-header:first-child {
+	border-radius: calc(0.6rem - (1px));
+}
+.app-form.app-icon-form .form-control {
+	padding: 0.5rem 0.75rem;
+	padding-left: 2rem;
+	border: 2px solid rgba(98, 98, 98, 0.4);
+}
+.app-form.app-icon-form i {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	font-size: 18px;
+}
+.app-form .form-select, .app-form .form-control {
+	color: #626262;
+	font-size: 14px;
+	padding: 0.8rem 0.75rem;
+	border: 1px solid rgba(98, 98, 98, 0.4);
+	text-overflow: ellipsis;
+}
+.app-form .form-label {
+	color: #28232d;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+
 .app-datatable-default .dataTables_wrapper .dataTables_length {
 	padding: 1rem 1.25rem;
 }

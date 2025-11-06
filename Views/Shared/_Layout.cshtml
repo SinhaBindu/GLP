@@ -128,23 +128,64 @@
                             </div>
                         </div>
                         <div class="col-4 col-sm-6 d-flex align-items-center justify-content-end header-right p-0">
-                            
+                            <ul class="d-flex align-items-center">
+                                <li class="header-apps">
+                                    <a aria-controls="appscanvasRights" class="d-block head-icon bg-light-dark rounded-circle f-s-22 p-2" data-bs-target="#appscanvasRights" data-bs-toggle="offcanvas" href="#" role="button">
+                                        <i class="fa fa-user"></i>
+                                    </a>
+                                    <div aria-labelledby="appscanvasRightsLabel" class="offcanvas offcanvas-end header-apps-canvas" id="appscanvasRights" tabindex="-1">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title">Shortcut</h5>
+                                        </div>
+                                        <div class="offcanvas-body app-scroll">
+                                            <div class="row row-cols-3 g-2">
+                                                <div class="d-flex-center text-center">
+                                                    <a class="text-light-primary w-100 rounded-3 py-3 px-2 " href="profile.html" target="_blank">
+                                                        <span>
+                                                            <i class="ph-light fa fa-user f-s-30"></i>
+                                                        </span>
+                                                        <p class="mb-0 f-w-500 text-dark">Profile</p>
+                                                    </a>
+                                                </div>
+                                                <div class="d-flex-center text-center">
+                                                    <a class="text-light-danger w-100 rounded-3 py-3 px-2 " href="sign_in.html" target="_blank">
+                                                        <span>
+                                                            <i class="ph-light fa fa-sign f-s-30"></i>
+                                                        </span>
+                                                        <p class="mb-0 f-w-500 text-dark">Log Out</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </header>
             <main class="page-content">
                 <div class="container-fluid">
+                    @RenderBody()
+                </div>
+            </main>
+            <footer>
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12">
-                            @RenderBody()
-                            <footer>
-                                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-                            </footer>
+                        <div class="col-md-9 col-12">
+                            <p class="footer-text f-w-600 mb-0">
+                                Copyright © 2025 ki-admin. All rights reserved 💖
+                                V1.0.0
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-text text-end">
+                                <a class="f-w-500 text-primary" href="mailto:teqlathemes@gmail.com"> Need Help <i class="ti ti-help"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </main>
+            </footer>
         </div>
     </div>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark" style="display:none;">
